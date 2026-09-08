@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TestBench — Tests produits sans complaisance</title>
+<meta name="description" content="TestBench teste les produits tech du quotidien sur la durée, en conditions réelles. On commence par les robots aspirateurs.">
+<link rel="canonical" href="./">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TestBench — Tests produits sans complaisance">
+<meta property="og:description" content="Des tests longue durée, en conditions réelles, avec les vrais défauts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="aurora"></div>
+<div class="grid-overlay"></div>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="./">
+      <span class="brand__mark" aria-hidden="true">T</span>
+      <span class="brand__name">Test<span>Bench</span></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="./" aria-current="page">Accueil</a>
+      <a href="#tests">Tests</a>
+      <a href="#methode">Méthode</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="tag tag--accent"><span class="dot"></span> Tests longue durée</span>
+      <h1>Le banc d'essai des produits qu'on utilise <em>vraiment</em>.</h1>
+      <p class="hero__lead">
+        Pas de test express déballé en une après-midi. Ici, chaque produit est utilisé plusieurs semaines
+        à la maison, dans des conditions réelles — poils d'animaux, sols mixtes, usage quotidien —
+        avant d'être noté. Les défauts sont écrits noir sur blanc.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#tests">Voir les tests</a>
+        <a class="btn" href="#methode">Notre méthode</a>
+      </div>
+
+      <div class="stats">
+        <div class="glass stat">
+          <div class="stat__num">1</div>
+          <div class="stat__label">produit testé</div>
+        </div>
+        <div class="glass stat">
+          <div class="stat__num">6+</div>
+          <div class="stat__label">semaines par test</div>
+        </div>
+        <div class="glass stat">
+          <div class="stat__num">1</div>
+          <div class="stat__label">catégorie couverte</div>
+        </div>
+        <div class="glass stat">
+          <div class="stat__num">0</div>
+          <div class="stat__label">test sponsorisé</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTS ================= -->
+  <section class="section" id="tests">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Catalogue</span>
+          <h2>Les produits passés au banc</h2>
+          <p>Chaque fiche donne la note finale, les points forts, les vrais défauts et où acheter au meilleur prix.</p>
+        </div>
+      </div>
+
+      <!-- Catégories : ajouter ici les futures catégories -->
+      <div class="chips" role="list" aria-label="Catégories de produits">
+        <span class="chip chip--active" role="listitem">Robots aspirateurs</span>
+        <span class="chip chip--soon" role="listitem">Aspirateurs balais — bientôt</span>
+        <span class="chip chip--soon" role="listitem">Purificateurs d'air — bientôt</span>
+        <span class="chip chip--soon" role="listitem">Audio — bientôt</span>
+      </div>
+
+      <div class="cards">
+
+        <!-- ▼ CARTE PRODUIT — dupliquer ce bloc pour chaque nouveau test ▼ -->
+        <article class="glass card">
+          <div class="card__media">
+            <!-- Remplacer par : <img src="./assets/img/dreame-aqua10.jpg" alt="Dreame Aqua10 Ultra Roller Complete"> -->
+            <span class="card__placeholder">Photo à venir</span>
+            <div class="card__score">7,4<span>/10</span></div>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Robot aspirateur</span>
+            <h3 class="card__title">
+              <a href="./produits/dreame-aqua10-ultra-roller-complete.html">Dreame Aqua10 Ultra Roller Complete</a>
+            </h3>
+            <p class="card__excerpt">
+              Plusieurs semaines d'usage avec un chat à la maison. Il aspire bien et la brosse démêlante
+              est excellente, mais l'entretien manuel du rouleau et les bourrages plombent le quotidien.
+            </p>
+            <div class="card__foot">
+              <span>Test sur 6 semaines</span>
+              <a class="card__link" href="./produits/dreame-aqua10-ultra-roller-complete.html">Lire le test</a>
+            </div>
+          </div>
+        </article>
+        <!-- ▲ FIN CARTE PRODUIT ▲ -->
+
+        <article class="glass card card--ghost">
+          <div>
+            <div class="method__num">PROCHAINEMENT</div>
+            <p style="margin:0">Le prochain test est en cours à la maison.<br>Nouvelle fiche bientôt en ligne.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MÉTHODE ================= -->
+  <section class="section section--tight" id="methode">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Méthode</span>
+          <h2>Comment on teste</h2>
+          <p>Un protocole simple, mais tenu sur la durée : c'est là que les vrais défauts sortent.</p>
+        </div>
+      </div>
+
+      <div class="method">
+        <div class="glass method__item">
+          <div class="method__num">01</div>
+          <h3>Usage réel, pas labo</h3>
+          <p>Le produit remplace l'équipement en place et sert au quotidien, dans un vrai logement occupé.</p>
+        </div>
+        <div class="glass method__item">
+          <div class="method__num">02</div>
+          <h3>Minimum plusieurs semaines</h3>
+          <p>Les problèmes d'entretien, d'encrassement ou de fiabilité n'apparaissent jamais le premier jour.</p>
+        </div>
+        <div class="glass method__item">
+          <div class="method__num">03</div>
+          <h3>Comparaison à l'existant</h3>
+          <p>Chaque produit est jugé face à celui qu'il remplace, pas dans le vide.</p>
+        </div>
+        <div class="glass method__item">
+          <div class="method__num">04</div>
+          <h3>Note et défauts assumés</h3>
+          <p>Une note sur 10, des points forts, des points faibles. Aucun test n'est validé par une marque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__inner">
+      <div>
+        <a class="brand" href="./">
+          <span class="brand__mark" aria-hidden="true">T</span>
+          <span class="brand__name">Test<span>Bench</span></span>
+        </a>
+        <p>Tests produits indépendants, écrits après plusieurs semaines d'utilisation réelle.</p>
+      </div>
+      <nav aria-label="Liens de bas de page">
+        <a href="./">Accueil</a>
+        <a href="#tests">Tests</a>
+        <a href="#methode">Méthode</a>
+      </nav>
+    </div>
+    <p class="legal">
+      Certains liens de cette page sont des liens affiliés : si vous achetez via ces liens, TestBench peut
+      percevoir une commission, sans surcoût pour vous. Cela n'influence ni les notes ni le contenu des tests.
+      © <span id="year">2026</span> TestBench.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
