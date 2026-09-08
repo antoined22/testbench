@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <!--
   MODÈLE DE PAGE PRODUIT — TestBench
-  1. Copier ce fichier dans /produits/ sous le nom : marque-modele.html
-  2. Remplacer tous les {{...}}
+  1. Copier ce fichier vers : /tests/{{SLUG}}/index.html
+     (le dossier donne l'URL propre /tests/{{SLUG}}/ — ne pas renommer en .html)
+  2. Remplacer tous les {{...}} ci-dessous
   3. Ajouter la carte correspondante dans index.html (bloc "CARTE PRODUIT")
-  Ce fichier n'est pas listé sur le site, il sert uniquement de gabarit.
+  4. Ajouter l'URL dans sitemap.xml
+  Ce fichier n'est ni listé ni indexé (voir robots.txt), il sert de gabarit.
 -->
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Test {{PRODUIT}} : {{ACCROCHE}} — TestBench</title>
-<meta name="description" content="{{META_DESCRIPTION_150_CARACTERES}}">
-<link rel="canonical" href="./{{SLUG}}.html">
+
+<!-- SEO : viser « avis test {{PRODUIT}} ». Titre ≤ 60 caractères,
+     description 150-160 caractères, les deux uniques sur tout le site. -->
+<title>{{PRODUIT}} : test et avis {{ANGLE_COURT}}</title>
+<meta name="description" content="{{META_DESCRIPTION_150_160_CARACTERES}}">
+<link rel="canonical" href="https://antoined22.github.io/testbench/tests/{{SLUG}}/">
+
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{PRODUIT}} : {{ACCROCHE}}">
-<meta property="og:description" content="{{META_DESCRIPTION_150_CARACTERES}}">
+<meta property="og:site_name" content="TestBench">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://antoined22.github.io/testbench/tests/{{SLUG}}/">
+<meta property="og:title" content="{{PRODUIT}} : test et avis {{ANGLE_COURT}}">
+<meta property="og:description" content="{{ACCROCHE_PARTAGE}}">
+<meta property="og:image" content="https://antoined22.github.io/testbench/assets/img/og-{{SLUG}}.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Test du {{PRODUIT}} sur TestBench, noté {{NOTE}} sur 10">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{PRODUIT}} : test et avis {{ANGLE_COURT}}">
+<meta name="twitter:description" content="{{ACCROCHE_PARTAGE}}">
+<meta name="twitter:image" content="https://antoined22.github.io/testbench/assets/img/og-{{SLUG}}.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
 <div class="aurora"></div>
@@ -29,14 +47,14 @@
 
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="../">
+    <a class="brand" href="../../">
       <span class="brand__mark" aria-hidden="true">T</span>
       <span class="brand__name">Test<span>Bench</span></span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
-      <a href="../">Accueil</a>
-      <a href="../#tests">Tests</a>
-      <a href="../#methode">Méthode</a>
+      <a href="../../">Accueil</a>
+      <a href="../../#tests">Tests</a>
+      <a href="../../#methode">Méthode</a>
     </nav>
   </div>
 </header>
@@ -44,7 +62,7 @@
 <main id="main">
   <div class="wrap">
     <nav class="breadcrumb" aria-label="Fil d'ariane">
-      <a href="../">Accueil</a><span>/</span><a href="../#tests">{{CATEGORIE}}</a><span>/</span>{{PRODUIT}}
+      <a href="../../">Accueil</a><span>/</span><a href="../../#tests">{{CATEGORIE}}</a><span>/</span>{{PRODUIT}}
     </nav>
   </div>
 
@@ -174,16 +192,16 @@
   <div class="wrap">
     <div class="site-footer__inner">
       <div>
-        <a class="brand" href="../">
+        <a class="brand" href="../../">
           <span class="brand__mark" aria-hidden="true">T</span>
           <span class="brand__name">Test<span>Bench</span></span>
         </a>
         <p>Tests produits indépendants, écrits après plusieurs semaines d'utilisation réelle.</p>
       </div>
       <nav aria-label="Liens de bas de page">
-        <a href="../">Accueil</a>
-        <a href="../#tests">Tests</a>
-        <a href="../#methode">Méthode</a>
+        <a href="../../">Accueil</a>
+        <a href="../../#tests">Tests</a>
+        <a href="../../#methode">Méthode</a>
       </nav>
     </div>
     <p class="legal">

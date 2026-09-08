@@ -1,0 +1,8 @@
+# TestBench — indexation ouverte à tous les moteurs
+User-agent: *
+Allow: /
+
+# Gabarits internes : pas de contenu réel, inutile de les indexer
+Disallow: /_templates/
+
+Sitemap: https://antoined22.github.io/testbench/sitemap.xml
