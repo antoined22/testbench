@@ -89,6 +89,10 @@ li { margin-bottom: .45em; }
 .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 .section { padding: 84px 0; }
 .section--tight { padding: 52px 0; }
+/* Décale l'ancre pour que le contenu ne passe pas sous le header collant.
+   Les sections ont déjà un grand padding haut, d'où un décalage plus faible. */
+section[id] { scroll-margin-top: 24px; }
+[id="ou-acheter"], [id="verdict"] { scroll-margin-top: 88px; }
 
 .skip-link {
   position: absolute; left: -9999px; top: 0;
