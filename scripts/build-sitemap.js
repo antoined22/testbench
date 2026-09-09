@@ -8,10 +8,15 @@ const SITE = 'https://antoined22.github.io/testbench';
 const today = new Date().toISOString().slice(0, 10);
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'tests.json'), 'utf8'));
 
-// Pages non générées depuis le JSON (rédigées à la main).
+// Pages éditoriales. Le 404, les gabarits et les redirections en sont exclus.
 const fixed = [
   { loc: SITE + '/', changefreq: 'weekly', priority: '1.0' },
-  { loc: SITE + '/tests/dreame-aqua10-ultra-roller-complete/', changefreq: 'monthly', priority: '0.8' },
+  { loc: SITE + '/meilleur-robot-aspirateur/', changefreq: 'weekly', priority: '0.9' },
+  { loc: SITE + '/tests/', changefreq: 'weekly', priority: '0.9' },
+  { loc: SITE + '/methodologie/', changefreq: 'yearly', priority: '0.5' },
+  { loc: SITE + '/a-propos/', changefreq: 'yearly', priority: '0.5' },
+  { loc: SITE + '/mentions-legales/', changefreq: 'yearly', priority: '0.2' },
+  { loc: SITE + '/confidentialite/', changefreq: 'yearly', priority: '0.2' },
 ];
 
 const urls = fixed.concat(

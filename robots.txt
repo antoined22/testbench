@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-# Gabarits internes : pas de contenu réel, inutile de les indexer
-Disallow: /_templates/
+# /produits/ reste explorable : les pages y sont en noindex + canonical,
+# Google doit pouvoir les lire pour consolider les anciennes URL.
 
 Sitemap: https://antoined22.github.io/testbench/sitemap.xml

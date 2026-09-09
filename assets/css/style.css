@@ -458,3 +458,115 @@ a:focus-visible, button:focus-visible {
   outline-offset: 3px;
   border-radius: 6px;
 }
+
+/* ==========================================================================
+   Ajouts SEO / structure : badges de provenance, maillage, pages éditoriales
+   ========================================================================== */
+
+/* Masqué visuellement, lu par les lecteurs d'écran et les moteurs. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+
+/* Provenance de l'avis : testé chez nous ou analyse documentaire. */
+.tag--tested {
+  color: var(--good);
+  border-color: rgba(52, 211, 153, .34);
+  background: rgba(52, 211, 153, .09);
+}
+.tag--tested .dot { background: var(--good); box-shadow: 0 0 10px var(--good); }
+.tag--analysis {
+  color: var(--text-soft);
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, .05);
+}
+
+.disclosure {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: rgba(255, 255, 255, .03);
+  font-size: .88rem;
+  color: var(--text-muted);
+  max-width: 68ch;
+}
+.disclosure a { color: var(--accent-2); font-weight: 600; }
+
+/* Listes de maillage interne */
+.related { list-style: none; padding: 0; margin: 0 0 1.4em; display: grid; gap: 10px; }
+.related li {
+  margin: 0;
+  padding: 13px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  font-size: .93rem;
+  color: var(--text-muted);
+  transition: border-color .18s ease, background .18s ease;
+}
+.related li:hover { border-color: var(--border-strong); background: var(--surface-strong); }
+.related a { color: var(--accent-2); font-weight: 600; }
+
+/* Pages éditoriales */
+.hero--page { padding: 40px 0 24px; }
+.hero--page h1 { font-size: clamp(1.9rem, 4.4vw, 3rem); max-width: 22ch; margin: 18px 0 16px; }
+.prose--wide { max-width: 78ch; }
+.table-note { font-size: .82rem; color: var(--text-muted); margin-top: -12px; }
+
+.ranking th[scope="col"] {
+  color: var(--text-soft); font-weight: 600; font-size: .82rem;
+  text-transform: uppercase; letter-spacing: .06em; width: auto;
+}
+.ranking thead tr { border-bottom: 1px solid var(--border-strong); }
+.ranking td { text-align: center; }
+.ranking th[scope="row"] { width: auto; color: var(--text); font-weight: 600; }
+.ranking th[scope="row"] a { color: var(--accent-2); }
+.ranking tbody tr:hover { background: rgba(255, 255, 255, .025); }
+
+.breadcrumb [aria-current="page"] { color: var(--text-soft); }
+
+/* Pied de page en colonnes */
+.footer-cols {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, 1fr);
+  gap: 36px 28px;
+}
+.footer-cols nav { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.footer-cols h2 {
+  font-family: var(--font);
+  font-size: .74rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--text-muted); margin: 6px 0 4px; font-weight: 600;
+}
+.footer-cols a { color: var(--text-soft); font-size: .88rem; }
+.footer-cols a:hover { color: var(--text); }
+.footer-cols .brand { margin-bottom: 12px; }
+
+@media (max-width: 860px) {
+  .footer-cols { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .footer-cols { grid-template-columns: 1fr; gap: 26px; }
+  .ranking { font-size: .84rem; }
+  .ranking th, .ranking td { padding: 10px 8px; }
+}
+
+/* Sur petit écran, les trois liens de navigation ne tiennent plus à côté du
+   logo : l'en-tête passe sur deux lignes plutôt que de déborder. */
+@media (max-width: 600px) {
+  .site-header__inner {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0 12px;
+  }
+  .nav {
+    width: 100%;
+    justify-content: center;
+    gap: 4px;
+  }
+  .nav a { padding: 7px 11px; font-size: .82rem; }
+}
