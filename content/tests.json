@@ -916,7 +916,14 @@
           "Non relevé"
         ]
       ],
-      "closing": "En résumé : aspiration et lavage excellents, navigation irréprochable, et un bras robotisé qui tient ses promesses même s'il reste perfectible. Un très bon cru pour qui cherche ce qui se fait de plus avancé chez Roborock."
+      "closing": "En résumé : aspiration et lavage excellents, navigation irréprochable, et un bras robotisé qui tient ses promesses même s'il reste perfectible. Un très bon cru pour qui cherche ce qui se fait de plus avancé chez Roborock.",
+      "affiliate": [
+        {
+          "merchant": "Amazon",
+          "url": "https://link.amazon/B04qMKgpq",
+          "note": "Lien court Amazon"
+        }
+      ]
     }
   ]
 }
