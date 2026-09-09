@@ -800,57 +800,95 @@
     {
       "slug": "roborock-saros-z70",
       "name": "Roborock Saros Z70",
+      "brand": "Roborock",
       "category": "Robot aspirateur",
       "date": "9 septembre 2026",
-      "note": "8,6",
+      "note": "9,2",
+      "tested": true,
+      "testDuration": "plusieurs semaines",
+      "testConditions": "usage quotidien à domicile",
       "role": "Le plus innovant",
-      "lead": "Le modèle le plus spectaculaire de la gamme, avec son bras robotisé capable de déplacer de petits objets. Mais la technologie ne doit pas faire oublier l'essentiel.",
+      "lead": "Le bras robotisé fonctionne vraiment, la navigation et le lavage sont excellents. Le modèle le plus spectaculaire de la gamme Roborock à ce jour, et le seul à proposer cette technologie à ce niveau de maturité.",
+      "description": "Test du Roborock Saros Z70 après plusieurs semaines : le bras robotisé tient-il ses promesses ? Aspiration, lavage, navigation et pour qui il est fait.",
       "verdict": [
-        "Le Saros Z70 est le modèle le plus spectaculaire de la gamme.",
-        "Sa particularité est évidente : il possède un bras robotisé capable d'identifier et de déplacer certains petits objets présents au sol.",
-        "Mais cette technologie ne doit pas faire oublier l'essentiel : le Z70 reste avant tout un robot aspirateur-laveur."
+        "J'ai testé le <strong>Roborock Saros Z70</strong> pendant plusieurs semaines et c'est clairement le modèle le plus spectaculaire de la gamme Roborock à ce jour."
       ],
       "criteria": [
         {
           "label": "Aspiration",
-          "score": "8,2"
+          "score": "9,5"
         },
         {
           "label": "Lavage",
-          "score": "9"
-        },
-        {
-          "label": "Bras robotisé",
-          "score": "7"
+          "score": "9,5"
         },
         {
           "label": "Navigation",
-          "score": "9"
+          "score": "9,5"
+        },
+        {
+          "label": "Bras robotisé",
+          "score": "8"
         },
         {
           "label": "Innovation",
           "score": "10"
         }
       ],
-      "audience": {
-        "title": "À qui s'adresse-t-il ?",
-        "paragraphs": [
-          "Le Z70 est surtout destiné aux passionnés de technologie qui veulent le robot le plus innovant possible.",
-          "Pour quelqu'un qui cherche simplement le meilleur rapport efficacité/prix, un Saros 10R ou un Saros 20 peut être plus pertinent."
-        ]
-      },
+      "sections": [
+        {
+          "title": "Le bras robotisé",
+          "score": "8",
+          "paragraphs": [
+            "Sa particularité principale, c'est le bras robotisé capable d'identifier et de déplacer certains petits objets présents au sol pour se dégager le passage.",
+            "Sur mes essais, <strong>ça fonctionne vraiment bien</strong>. C'est moins révolutionnaire que ce que le marketing pourrait laisser penser, mais pour un premier essai de cette technologie, le résultat est déjà très convaincant."
+          ],
+          "callout": "Le bras tient ses promesses sans être encore un substitut au rangement : c'est une aide au dégagement du passage, pas un majordome."
+        },
+        {
+          "title": "Aspiration",
+          "score": "9,5",
+          "paragraphs": [
+            "Côté aspiration, les performances sont excellentes, au niveau de ce qui se fait de mieux actuellement chez Roborock."
+          ]
+        },
+        {
+          "title": "Lavage",
+          "score": "9,5",
+          "paragraphs": [
+            "Pour le lavage, le robot utilise deux serpillières rotatives, nettoyées automatiquement par la station. Le résultat est très propre et <strong>le système fonctionne parfaitement sans intervention</strong>."
+          ]
+        },
+        {
+          "title": "Navigation",
+          "score": "9,5",
+          "paragraphs": [
+            "La navigation est également au top de ce que propose la marque : déplacements fluides, cartographie précise, aucun souci relevé pendant les tests."
+          ]
+        }
+      ],
       "pros": [
-        "Technologie du bras robotisé unique",
-        "Très bonne navigation",
-        "Excellent lavage",
-        "Station très automatisée",
-        "Très bon nettoyage des sols durs"
+        "Bras robotisé qui fonctionne vraiment, unique à ce niveau de maturité",
+        "Aspiration excellente, au niveau du meilleur de la gamme Roborock",
+        "Lavage très propre, entièrement pris en charge par la station",
+        "Navigation irréprochable : déplacements fluides et cartographie précise",
+        "Aucun incident relevé pendant le test"
       ],
       "cons": [
-        "Très cher",
-        "Bras encore imparfait",
-        "Performances d'aspiration pas systématiquement supérieures aux modèles moins chers",
-        "L'innovation ne justifie pas forcément le prix pour tous les utilisateurs"
+        "Le bras reste perfectible et moins spectaculaire que ne le laisse penser le marketing",
+        "Une technologie qui s'adresse d'abord aux passionnés, pas à ceux qui cherchent le meilleur rapport efficacité/prix"
+      ],
+      "audience": {
+        "title": "Pour qui ce robot est-il adapté ?",
+        "paragraphs": [
+          "Ce robot s'adresse surtout aux passionnés de technologie qui veulent le robot le plus innovant du moment, avec une fonctionnalité — le bras — qu'on ne trouve nulle part ailleurs à ce niveau de maturité.",
+          "Pour quelqu'un qui cherche simplement le meilleur rapport efficacité/prix, un <a href=\"../roborock-saros-10r/\">Saros 10R</a> ou un <a href=\"../roborock-saros-20/\">Saros 20</a> peut être plus pertinent."
+        ]
+      },
+      "notCovered": [
+        "le niveau sonore mesuré",
+        "l'autonomie mesurée",
+        "l'application mobile"
       ],
       "specs": [
         [
@@ -874,54 +912,11 @@
           "Cartographie précise et gestion avancée des obstacles"
         ],
         [
-          "Prix constaté",
-          "À compléter"
+          "Prix constaté en France",
+          "Non relevé"
         ]
       ],
-      "description": "Roborock Saros Z70 : le robot au bras robotisé. Notre avis complet sur ce qu'il fait vraiment, et pourquoi l'innovation ne suffit pas.",
-      "sections": [
-        {
-          "title": "Aspiration",
-          "score": "8,2",
-          "paragraphs": [
-            "Les performances d'aspiration sont bonnes, mais elles ne sont pas nécessairement les meilleures de la gamme.",
-            "Les essais indépendants montrent notamment de très bonnes performances sur les sols durs, tandis que les tapis et certains débris incrustés peuvent davantage mettre le robot en difficulté."
-          ]
-        },
-        {
-          "title": "Lavage",
-          "score": "9",
-          "paragraphs": [
-            "Le lavage est l'un des points forts du Z70.",
-            "Le robot dispose de deux serpillières rotatives et d'une station capable de les nettoyer automatiquement. Les tests en conditions réelles montrent une bonne efficacité sur les saletés quotidiennes."
-          ]
-        },
-        {
-          "title": "Bras robotisé",
-          "score": "7",
-          "paragraphs": [
-            "C'est évidemment la fonctionnalité qui distingue le Z70.",
-            "Le bras peut déplacer certains petits objets afin de libérer le passage du robot.",
-            "En pratique, cette fonction reste cependant beaucoup moins révolutionnaire que ce que pourrait laisser penser le marketing. La détection et la manipulation d'objets ne sont pas encore suffisamment fiables pour remplacer un rangement manuel.",
-            "Des essais indépendants ont notamment montré que le bras ne fonctionnait pas systématiquement dans toutes les situations."
-          ]
-        },
-        {
-          "title": "Navigation",
-          "score": "9",
-          "paragraphs": [
-            "Le Z70 dispose d'un système de navigation particulièrement avancé.",
-            "Il est capable de cartographier précisément le logement et de gérer efficacement les obstacles."
-          ]
-        }
-      ],
-      "brand": "Roborock",
-      "tested": false,
-      "notCovered": [
-        "le niveau sonore",
-        "l'autonomie mesurée",
-        "l'application mobile"
-      ]
+      "closing": "En résumé : aspiration et lavage excellents, navigation irréprochable, et un bras robotisé qui tient ses promesses même s'il reste perfectible. Un très bon cru pour qui cherche ce qui se fait de plus avancé chez Roborock."
     }
   ]
 }

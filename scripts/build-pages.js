@@ -108,11 +108,16 @@ ${S.footer(1)}`;
   const pets = best("Poils d'animaux") || best('animal');
   const wash = best('Lavage');
   const premium = tests.find((t) => t.role && t.role.includes('global')) || top;
+  const nbTestes = tests.filter((t) => t.tested).length;
 
   const faq = [
     {
       q: 'Quel est le meilleur robot aspirateur selon TestBench ?',
-      a: `Sur les ${tests.length} modèles que nous avons évalués, le ${top.name} obtient la note la plus élevée, ${top.note}/10. C'est une analyse documentaire, pas un test physique.`,
+      a: `Sur les ${tests.length} modèles que nous avons évalués, le ${top.name} obtient la note la plus élevée, ${top.note}/10. ${
+        top.tested
+          ? 'Nous l\'avons utilisé nous-mêmes pendant plusieurs semaines.'
+          : "C'est une analyse documentaire, pas un test physique."
+      }`,
     },
     {
       q: 'Quel robot aspirateur choisir quand on a un chat ?',
@@ -162,8 +167,9 @@ ${bc.html}
       <span class="tag tag--accent"><span class="dot"></span> Mis à jour en septembre 2026</span>
       <h1>Meilleur robot aspirateur 2026 : notre classement</h1>
       <p class="hero__lead">Ce classement ne couvre que les ${tests.length} modèles que nous avons évalués.
-      Un seul a été utilisé chez nous&nbsp;; les autres sont des analyses des essais indépendants publiés.
-      Nous préférons un classement court et honnête à une liste exhaustive de produits jamais examinés.</p>
+      ${nbTestes} ${nbTestes > 1 ? 'ont été utilisés' : 'a été utilisé'} chez nous&nbsp;; les autres sont des
+      analyses des essais indépendants publiés. Nous préférons un classement court et honnête à une liste
+      exhaustive de produits jamais examinés.</p>
     </div>
   </section>
 
