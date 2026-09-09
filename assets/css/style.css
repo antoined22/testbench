@@ -570,3 +570,19 @@ a:focus-visible, button:focus-visible {
   }
   .nav a { padding: 7px 11px; font-size: .82rem; }
 }
+
+/* Le bloc marchands est collant : sur grand écran il est déjà visible quand on
+   clique sur « Voir le prix », donc le défilement ne montre rien. On le met en
+   évidence à l'arrivée pour signaler où le lien a mené. */
+.buy-box:target {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 40px -8px rgba(94, 234, 212, .45);
+  animation: buy-box-flash 1.6s ease-out 1;
+}
+@keyframes buy-box-flash {
+  0%, 30% { background: rgba(94, 234, 212, .13); }
+  100%    { background: var(--surface); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .buy-box:target { animation: none; }
+}

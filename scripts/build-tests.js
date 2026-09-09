@@ -108,17 +108,17 @@ ${para(s.paragraphs)}${sub}${call}`;
     })
     .join('\n');
 
-  /* Rappel marchand en cours d'article. Il pointe directement sur l'offre :
-     un bouton « Voir le prix » qui se contenterait de faire défiler la page
-     vers l'encadré latéral ne tient pas sa promesse. */
+  /* Rappel en cours d'article : il renvoie vers le bloc marchands de la page,
+     pas directement chez un marchand, pour que le lecteur voie toutes les
+     offres. L'encadré cible étant collant, il est souvent déjà à l'écran sur
+     grand format : la règle .buy-box:target le met en évidence à l'arrivée,
+     sans quoi le clic semblerait sans effet. */
   const firstOffer = (t.affiliate || [])[0];
   const inlineCta = firstOffer
     ? `
           <div class="glass cta-inline">
             <p><strong>Vous envisagez ce modèle&nbsp;?</strong><br>Son prix bouge souvent, vérifiez l'offre du jour.</p>
-            <a class="btn btn--primary" href="${firstOffer.url}" rel="sponsored nofollow noopener" target="_blank">
-              Voir le prix sur ${firstOffer.merchant} <span aria-hidden="true">↗</span>
-            </a>
+            <a class="btn btn--primary" href="#ou-acheter">Voir le prix</a>
           </div>`
     : '';
 
