@@ -117,7 +117,14 @@
           "Non relevé"
         ]
       ],
-      "closing": "En résumé, le Dreame Aqua10 Ultra Roller Complete <strong>aspire bien et sa brosse démêlante est un vrai point fort</strong>, mais son entretien plus lourd — à cause des bourrages liés aux poils de chat et du rouleau à nettoyer à la main — vient ternir l'expérience."
+      "closing": "En résumé, le Dreame Aqua10 Ultra Roller Complete <strong>aspire bien et sa brosse démêlante est un vrai point fort</strong>, mais son entretien plus lourd — à cause des bourrages liés aux poils de chat et du rouleau à nettoyer à la main — vient ternir l'expérience.",
+      "affiliate": [
+        {
+          "merchant": "Amazon",
+          "url": "https://www.amazon.fr/dp/B0FHHYQ58Q?tag=antoine084-21&linkCode=ll2&linkId=f55fb329528946f0034a901c2e59a0b4&language=fr_FR",
+          "note": "Vendu et expédié par Amazon"
+        }
+      ]
     },
     {
       "slug": "roborock-saros-20",

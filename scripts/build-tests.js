@@ -108,6 +108,16 @@ ${para(s.paragraphs)}${sub}${call}`;
     })
     .join('\n');
 
+  /* Rappel vers le bloc marchands, inséré après la première section — et
+     seulement si un lien existe : sinon le bouton ne mènerait nulle part. */
+  const inlineCta = (t.affiliate || []).length
+    ? `
+          <div class="glass cta-inline">
+            <p><strong>Vous envisagez ce modèle&nbsp;?</strong><br>Son prix bouge souvent, vérifiez l'offre du jour.</p>
+            <a class="btn btn--primary" href="#ou-acheter">Voir le prix</a>
+          </div>`
+    : '';
+
   const audience =
     t.audienceFor || t.audienceNot || t.audience
       ? `
@@ -177,6 +187,40 @@ ${rel
             <li><a href="../../methodologie/">Comment nous évaluons les robots aspirateurs</a></li>
           </ul>`;
 
+  /* Bloc marchands. Un lien mort dégrade l'expérience et le référencement :
+     on n'affiche que les marchands pour lesquels un lien existe réellement. */
+  const merchants = t.affiliate || [];
+  const hasAmazon = merchants.some((m) => /amazon/i.test(m.merchant));
+  const buyBox = merchants.length
+    ? `          <p class="buy-box__note">Nous ne relevons pas les prix : ils changent trop vite.
+          Le lien vous emmène sur l'offre du jour.</p>
+
+          <div class="merchant-list">
+${merchants
+  .map(
+    (m, i) => `            <a class="merchant${i === 0 ? ' merchant--best' : ''}" href="${m.url}" rel="sponsored nofollow noopener" target="_blank">
+              <span>
+                <span class="merchant__name">${m.merchant}</span><br>
+                <span class="merchant__meta">${m.note || 'Voir la fiche produit'}</span>
+              </span>
+              <span class="merchant__cta">Voir le prix →</span>
+            </a>`
+  )
+  .join('\n')}
+          </div>
+
+          <p class="affiliate-note">
+            ${hasAmazon ? "En tant que Partenaire Amazon, TestBench réalise un bénéfice sur les achats remplissant les conditions requises. " : ''}Ces liens sont des liens affiliés : un achat effectué après avoir cliqué peut rapporter
+            une commission à TestBench, <strong>sans surcoût pour vous</strong>. Cela ne change ni la note
+            ni le contenu de l'avis. <a href="../../a-propos/#affiliation">En savoir plus</a>.
+          </p>`
+    : `          <p class="buy-box__note">Nous n'avons pas encore de lien marchand pour ce modèle.
+          Cette section sera complétée&nbsp;; en attendant, rien ne vous est proposé à l'achat ici.</p>
+          <p class="affiliate-note">
+            Quand des liens marchands seront ajoutés, ce seront des liens affiliés, signalés comme tels.
+            <a href="../../a-propos/#affiliation">Notre fonctionnement</a>.
+          </p>`;
+
   const media = t.image
     ? `<img src="../../assets/img/${t.image.file}" alt="${S.esc(t.image.alt)}" width="1200" height="750" loading="lazy" decoding="async">`
     : `<span class="card__placeholder">Photo à venir</span>`;
@@ -239,7 +283,9 @@ ${list(t.cons)}
         <article class="prose">
           <h2>Notre verdict</h2>
 ${para(t.verdict)}
-${sections}
+${sections.split('\n          <h2>').slice(0, 2).join('\n          <h2>')}
+${inlineCta}
+${sections.split('\n          <h2>').length > 2 ? '\n          <h2>' + sections.split('\n          <h2>').slice(2).join('\n          <h2>') : ''}
 ${audience}
 ${warning}
 ${notCovered}
@@ -254,8 +300,12 @@ ${specs}
           </div>
 
           <h2>Prix</h2>
-          <p>Nous ne relevons pas encore de prix constaté en France pour ce modèle.
-          Les liens marchands ci-contre renvoient vers les offres du jour.</p>
+          <p>Nous ne relevons pas de prix constaté en France pour ce modèle : il change trop souvent
+          pour qu'un chiffre figé ici vous soit utile.${
+            (t.affiliate || []).length
+              ? " Les liens marchands renvoient vers l'offre du jour."
+              : " Aucun lien marchand n'est proposé pour l'instant."
+          }</p>
 ${relatedBlock}
 
           <div class="glass final-verdict" id="verdict">
@@ -282,31 +332,7 @@ ${subscores}
         <!-- ▼ EMPLACEMENT AFFILIATION — bloc marchands ▼ -->
         <div class="glass buy-box" id="ou-acheter">
           <h2>Où l'acheter</h2>
-          <p class="buy-box__note">Prix non relevés pour l'instant.</p>
-
-          <div class="merchant-list">
-            <a class="merchant merchant--best" href="#" rel="sponsored nofollow noopener" target="_blank">
-              <span>
-                <span class="merchant__name">Amazon</span><br>
-                <span class="merchant__meta">Lien à compléter</span>
-              </span>
-              <span class="merchant__cta">Voir le prix →</span>
-            </a>
-
-            <a class="merchant" href="#" rel="sponsored nofollow noopener" target="_blank">
-              <span>
-                <span class="merchant__name">${t.brand} (site officiel)</span><br>
-                <span class="merchant__meta">Lien à compléter</span>
-              </span>
-              <span class="merchant__cta">Voir l'offre →</span>
-            </a>
-          </div>
-
-          <p class="affiliate-note">
-            Liens affiliés : un achat via ces liens peut rapporter une commission à TestBench, sans surcoût
-            pour vous. Cela ne change ni la note ni le contenu de l'avis.
-            <a href="../../a-propos/#affiliation">En savoir plus</a>.
-          </p>
+${buyBox}
         </div>
         <!-- ▲ FIN EMPLACEMENT AFFILIATION ▲ -->
 

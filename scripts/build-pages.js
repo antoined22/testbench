@@ -407,6 +407,8 @@ ${bc.html}
       <p>Certains liens marchands du site sont des liens affiliés. Si vous achetez un produit après avoir
       cliqué sur l'un d'eux, TestBench peut percevoir une commission de la part du marchand.
       <strong>Le prix que vous payez est identique</strong>, avec ou sans ce lien.</p>
+      <p>En tant que Partenaire Amazon, TestBench réalise un bénéfice sur les achats remplissant
+      les conditions requises.</p>
       <p>Ces liens portent l'attribut <code>rel="sponsored nofollow"</code>, comme le demandent Google et
       les programmes d'affiliation. Ils n'influencent ni les notes attribuées, ni le contenu des avis,
       ni l'ordre du classement : un robot mal noté le reste, qu'il rapporte une commission ou non.</p>
