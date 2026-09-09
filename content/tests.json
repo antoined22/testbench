@@ -1,0 +1,635 @@
+{
+  "_comment": "Source des pages générées dans /tests/<slug>/. Éditer ce fichier puis relancer : node scripts/build-tests.js",
+  "tests": [
+    {
+      "slug": "roborock-saros-20",
+      "name": "Roborock Saros 20",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "9,1",
+      "role": "Le meilleur choix pour les sols durs",
+      "lead": "Le très haut de gamme de Roborock : aspiration extrêmement puissante, excellente gestion des obstacles et un châssis capable de franchir des seuils qu'un robot classique ne passerait pas.",
+      "verdict": [
+        "Le Roborock Saros 20 représente le très haut de gamme de la marque. Il mise principalement sur une aspiration extrêmement puissante, une excellente gestion des obstacles et surtout un châssis capable de franchir des seuils qu'un robot classique aurait du mal à passer.",
+        "Sur les sols durs, le résultat est particulièrement convaincant. Les poussières, miettes et débris du quotidien sont très bien récupérés. Sur les tapis et moquettes, le Saros 20 reste performant, notamment grâce à son système de brosses anti-emmêlement.",
+        "Le lavage est également l'un de ses gros points forts. La station peut laver les serpillières à très haute température et assurer automatiquement une grande partie de l'entretien."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "9",
+          "paragraphs": [
+            "Avec une puissance annoncée de 36 000 Pa, le Saros 20 fait partie des robots les plus puissants de sa génération. Dans les essais indépendants disponibles, il obtient d'excellents résultats sur les sols durs et de bons résultats sur les tapis. Les poils d'animaux sont également correctement pris en charge.",
+            "Son principal défaut apparaît davantage dans certaines zones difficiles : angles très serrés, bords de tapis ou particules particulièrement fines."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "9",
+          "paragraphs": [
+            "Le système de lavage est particulièrement complet. Le robot exerce une pression importante sur le sol et la station peut nettoyer les serpillières avec une eau pouvant atteindre 100 °C selon le mode utilisé.",
+            "Pour l'entretien quotidien, le résultat est excellent. Les traces légères et les saletés fraîches sont très bien prises en charge."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "9",
+          "paragraphs": [
+            "Le Saros 20 utilise un système de détection avancé associé à un LiDAR. Il sait identifier de nombreux objets et adapter son trajet.",
+            "Le système AdaptiLift est particulièrement intéressant dans les logements comportant des différences de niveau. Roborock annonce même la possibilité de franchir certains doubles seuils jusqu'à environ 8,8 cm dans des conditions précises de test."
+          ]
+        },
+        {
+          "label": "Poils d'animaux",
+          "score": "9",
+          "paragraphs": [
+            "C'est un robot particulièrement intéressant pour les propriétaires de chiens ou de chats. Les systèmes anti-emmêlement limitent fortement l'accumulation de cheveux et de poils dans les brosses.",
+            "Il reste néanmoins préférable de programmer des passages réguliers plutôt que d'attendre une importante accumulation de poils."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "9,5"
+        }
+      ],
+      "pros": [
+        "Aspiration très puissante",
+        "Excellent sur sols durs",
+        "Très bon lavage",
+        "Station très complète",
+        "Gestion des seuils impressionnante",
+        "Très bonne gestion des poils"
+      ],
+      "cons": [
+        "Prix élevé",
+        "Bac à poussière interne relativement compact",
+        "Navigation parfois moins parfaite dans certaines situations complexes"
+      ],
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros 20"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec station tout-en-un"
+        ],
+        [
+          "Puissance d'aspiration annoncée",
+          "36 000 Pa"
+        ],
+        [
+          "Lavage",
+          "Serpillières lavées en station jusqu'à 100 °C selon le mode"
+        ],
+        [
+          "Châssis",
+          "AdaptiLift — franchissement annoncé jusqu'à environ 8,8 cm (double seuil, conditions de test)"
+        ],
+        [
+          "Brosses",
+          "Système anti-emmêlement"
+        ],
+        [
+          "Navigation",
+          "LiDAR + détection d'obstacles avancée"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros 20 : 36 000 Pa, lavage en station jusqu'à 100 °C et châssis AdaptiLift. Notre avis complet, note par note, et ses vraies limites."
+    },
+    {
+      "slug": "roborock-saros-20-sonic",
+      "name": "Roborock Saros 20 Sonic",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "9,2",
+      "role": "Le meilleur choix global",
+      "lead": "Il reprend l'architecture du Saros 20 mais change de technologie de lavage : le système sonique VibraRise 5.0. À viser si le lavage des sols compte plus que tout.",
+      "verdict": [
+        "Le Saros 20 Sonic reprend une grande partie de l'architecture du Saros 20 mais adopte une technologie de lavage différente.",
+        "Son principal intérêt est donc son système de lavage sonique VibraRise 5.0. Il s'adresse particulièrement aux utilisateurs qui accordent davantage d'importance au lavage des sols."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "9",
+          "paragraphs": [
+            "Le robot annonce lui aussi jusqu'à 36 000 Pa. Les résultats publiés dans différents protocoles indépendants montrent une excellente efficacité sur les sols durs et de très bonnes performances sur les tapis.",
+            "Le système anti-emmêlement est également très intéressant dans une maison où les cheveux sont nombreux."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "9,2",
+          "paragraphs": [
+            "C'est ici que le Sonic se démarque.",
+            "Le système VibraRise 5.0 utilise une technologie de lavage vibrante et applique une pression importante sur le sol. Roborock annonce jusqu'à 14 N de pression vers le bas.",
+            "Pour les traces quotidiennes, le système est particulièrement efficace."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "9",
+          "paragraphs": [
+            "La détection des obstacles est très poussée et le châssis AdaptiLift permet au robot de modifier sa hauteur pour passer sous certains meubles et franchir des obstacles.",
+            "Sa hauteur réduite permet également d'accéder à des zones difficiles d'accès."
+          ]
+        },
+        {
+          "label": "Station",
+          "score": "9,5",
+          "paragraphs": [
+            "La station prend pratiquement tout en charge : vidage, lavage des serpillières, séchage et entretien.",
+            "C'est un véritable avantage pour une utilisation quotidienne puisque l'intervention humaine devient minimale."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "9,5"
+        }
+      ],
+      "pros": [
+        "Excellent lavage",
+        "Très bonne aspiration",
+        "Station extrêmement complète",
+        "Très bonne navigation",
+        "Excellente gestion des cheveux",
+        "Châssis adaptatif"
+      ],
+      "cons": [
+        "Prix très élevé",
+        "Bac interne assez petit",
+        "Le lavage n'est pas systématiquement supérieur au Saros 20 classique selon les surfaces"
+      ],
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros 20 Sonic"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec station tout-en-un"
+        ],
+        [
+          "Puissance d'aspiration annoncée",
+          "36 000 Pa"
+        ],
+        [
+          "Lavage",
+          "VibraRise 5.0, lavage sonique vibrant"
+        ],
+        [
+          "Pression de lavage annoncée",
+          "Jusqu'à 14 N"
+        ],
+        [
+          "Châssis",
+          "AdaptiLift, hauteur adaptative"
+        ],
+        [
+          "Station",
+          "Vidage, lavage des serpillières, séchage et entretien"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros 20 Sonic : lavage sonique VibraRise 5.0 et station quasi autonome. Notre avis complet, critère par critère, avec ses limites."
+    },
+    {
+      "slug": "roborock-saros-20-flow-complete",
+      "name": "Roborock Saros 20 Flow Complete",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "9,2",
+      "noteProvisoire": true,
+      "lead": "Son système de lavage SpiraFlow 2.0 vise à maintenir une surface humide tout au long du passage. Le modèle le plus pertinent pour les grandes surfaces.",
+      "verdict": [
+        "Le Saros 20 Flow Complete est l'un des modèles les plus intéressants de la nouvelle génération Saros.",
+        "Son système de lavage SpiraFlow 2.0 constitue sa principale différence. Le concept vise à améliorer le lavage continu du sol tout en réduisant la quantité d'eau inutilisée.",
+        "Le modèle est particulièrement intéressant pour les grandes surfaces et les utilisateurs qui veulent maximiser l'automatisation."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "9",
+          "paragraphs": [
+            "Avec une puissance annoncée de 36 000 Pa, le robot se situe au sommet de la gamme.",
+            "Sur les sols durs, les performances attendues sont excellentes. La conception anti-emmêlement est également adaptée aux foyers ayant beaucoup de cheveux ou de poils."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "9,3",
+          "paragraphs": [
+            "Le système SpiraFlow 2.0 est le principal argument du modèle.",
+            "Contrairement à un système traditionnel à deux serpillières rotatives, le robot utilise un système de rouleau conçu pour maintenir une surface de nettoyage humide tout au long du passage.",
+            "C'est particulièrement intéressant dans les grandes pièces où le robot doit parcourir beaucoup de mètres carrés."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "9",
+          "paragraphs": [
+            "Le Saros 20 Flow Complete bénéficie de la nouvelle génération de détection et du châssis AdaptiLift.",
+            "La reconnaissance des obstacles et la gestion des différences de hauteur constituent deux de ses points forts."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "9,5"
+        }
+      ],
+      "audience": {
+        "title": "À qui s'adresse-t-il ?",
+        "intro": "Il est particulièrement pertinent pour :",
+        "items": [
+          "les grandes maisons",
+          "les grandes surfaces carrelées",
+          "les familles avec enfants",
+          "les foyers avec animaux domestiques",
+          "les utilisateurs voulant réduire au maximum l'entretien manuel"
+        ]
+      },
+      "warning": "Ce modèle étant très récent, nous avons encore moins de recul sur sa fiabilité à long terme que sur les modèles déjà commercialisés depuis plusieurs mois. La note est donc provisoire.",
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros 20 Flow Complete"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec station tout-en-un"
+        ],
+        [
+          "Puissance d'aspiration annoncée",
+          "36 000 Pa"
+        ],
+        [
+          "Lavage",
+          "SpiraFlow 2.0, rouleau à lavage continu"
+        ],
+        [
+          "Châssis",
+          "AdaptiLift, hauteur adaptative"
+        ],
+        [
+          "Brosses",
+          "Système anti-emmêlement"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros 20 Flow Complete : le lavage continu SpiraFlow 2.0, pensé pour les grandes surfaces. Notre avis complet et sa note provisoire."
+    },
+    {
+      "slug": "roborock-saros-20-neo",
+      "name": "Roborock Saros 20 Neo",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "8,9",
+      "noteProvisoire": true,
+      "lead": "La déclinaison accessible de la génération Saros : elle conserve le châssis AdaptiLift et une hauteur réduite d'environ 7,95 cm, pour passer sous de nombreux meubles.",
+      "verdict": [
+        "Le Saros 20 Neo est une déclinaison plus accessible de la nouvelle génération Saros.",
+        "Il conserve plusieurs technologies importantes de la gamme, notamment le châssis AdaptiLift et une hauteur réduite permettant de passer sous de nombreux meubles.",
+        "Roborock annonce également une aspiration allant jusqu'à 36 000 Pa."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "8,8",
+          "paragraphs": [
+            "La puissance annoncée est impressionnante. Le robot devrait particulièrement bien convenir aux sols durs et aux logements contenant beaucoup de poussière ou de poils.",
+            "Le système anti-emmêlement constitue également un argument intéressant pour les propriétaires d'animaux."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "8,8",
+          "paragraphs": [
+            "Le Saros 20 Neo propose un système de lavage automatisé associé à une station capable de prendre en charge l'entretien des serpillières.",
+            "Il est donc beaucoup plus autonome qu'un robot aspirateur classique."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "9",
+          "paragraphs": [
+            "Son faible encombrement vertical constitue l'un de ses avantages.",
+            "Avec une hauteur annoncée autour de 7,95 cm, il peut accéder à de nombreux espaces situés sous les meubles."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "9"
+        }
+      ],
+      "warning": "Le Saros 20 Neo est à surveiller de très près, mais son positionnement exact dépendra surtout de son prix de vente et des performances réellement constatées après plusieurs mois d'utilisation. La note est donc provisoire.",
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros 20 Neo"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec station"
+        ],
+        [
+          "Puissance d'aspiration annoncée",
+          "36 000 Pa"
+        ],
+        [
+          "Hauteur annoncée",
+          "Environ 7,95 cm"
+        ],
+        [
+          "Châssis",
+          "AdaptiLift"
+        ],
+        [
+          "Brosses",
+          "Système anti-emmêlement"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros 20 Neo : la déclinaison accessible des Saros, 36 000 Pa annoncés et 7,95 cm de haut. Notre avis complet et sa note provisoire."
+    },
+    {
+      "slug": "roborock-saros-10r",
+      "name": "Roborock Saros 10R",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "9,1",
+      "role": "Le meilleur rapport technologie/prix",
+      "lead": "Pas le robot aux chiffres les plus impressionnants sur le papier, mais son équilibre général est excellent — et sa navigation est probablement la meilleure de la gamme.",
+      "verdict": [
+        "Le Saros 10R reste l'un des robots les plus intéressants de la gamme pour les utilisateurs qui privilégient la navigation et l'autonomie.",
+        "Il n'est pas forcément le robot affichant les chiffres les plus impressionnants sur le papier, mais son équilibre général est excellent."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "8,8",
+          "paragraphs": [
+            "Les performances sont particulièrement bonnes sur les sols durs. Les tests indépendants le classent parmi les robots très performants pour récupérer les saletés quotidiennes.",
+            "Sur certains tapis, les particules très fines situées dans les fibres peuvent toutefois demander plusieurs passages."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "9,5",
+          "paragraphs": [
+            "C'est probablement son principal avantage.",
+            "Le Saros 10R est particulièrement performant pour identifier les objets présents au sol. Il est notamment réputé pour éviter efficacement les obstacles et les déjections d'animaux.",
+            "C'est un vrai avantage dans une maison où le sol n'est pas toujours parfaitement dégagé."
+          ]
+        },
+        {
+          "label": "Passage sous les meubles",
+          "score": "9,5",
+          "paragraphs": [
+            "Avec son système LiDAR rétractable, le robot peut réduire sa hauteur et accéder à des espaces particulièrement bas.",
+            "C'est un argument important face aux anciens robots équipés d'une tourelle LiDAR fixe."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "8,8",
+          "paragraphs": [
+            "Le système de lavage est très efficace pour l'entretien courant. Il est toutefois possible de trouver plus performant sur les taches particulièrement incrustées."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "9"
+        }
+      ],
+      "pros": [
+        "Navigation exceptionnelle",
+        "Très bonne aspiration",
+        "Excellent passage sous les meubles",
+        "Très bonne détection des obstacles",
+        "Excellent choix pour les animaux"
+      ],
+      "cons": [
+        "Nettoyage des tapis perfectible sur certaines saletés",
+        "Performances de lavage pas toujours au niveau des modèles les plus récents"
+      ],
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros 10R"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec station"
+        ],
+        [
+          "Navigation",
+          "LiDAR rétractable + détection d'objets au sol"
+        ],
+        [
+          "Atout principal",
+          "Évitement des obstacles et des déjections d'animaux"
+        ],
+        [
+          "Passage sous les meubles",
+          "Hauteur réduite grâce au LiDAR rétractable"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros 10R : la meilleure navigation de la gamme et un LiDAR rétractable pour passer sous les meubles. Notre avis complet, note par note."
+    },
+    {
+      "slug": "roborock-saros-10",
+      "name": "Roborock Saros 10",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "9",
+      "role": "Le choix rationnel",
+      "lead": "Un excellent compromis entre technologie haut de gamme et maturité : contrairement aux modèles les plus récents, il bénéficie d'un vrai recul en utilisation quotidienne.",
+      "verdict": [
+        "Le Saros 10 est un excellent compromis entre technologie haut de gamme et maturité.",
+        "Il a aujourd'hui un avantage important : contrairement aux modèles les plus récents, il bénéficie d'un recul beaucoup plus important en utilisation quotidienne.",
+        "Des essais prolongés ont notamment montré une très bonne efficacité sur les poussières et les poils d'animaux, ainsi qu'une bonne fiabilité générale."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "9",
+          "paragraphs": [
+            "Le Saros 10 offre une excellente puissance d'aspiration et se montre particulièrement efficace sur les sols durs.",
+            "Il est également très performant pour les poils d'animaux."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "8,7",
+          "paragraphs": [
+            "Le système de lavage est efficace pour l'entretien quotidien.",
+            "Les taches récentes sont généralement bien prises en charge. Pour les traces sèches ou particulièrement incrustées, plusieurs passages peuvent néanmoins être nécessaires."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "8,7",
+          "paragraphs": [
+            "La navigation est globalement excellente mais peut être un peu moins convaincante que celle du 10R dans certaines situations.",
+            "Le système LiDAR rétractable reste toutefois un énorme avantage pour passer sous les meubles bas."
+          ]
+        },
+        {
+          "label": "Fiabilité",
+          "score": "9,3",
+          "paragraphs": [
+            "C'est l'un de ses meilleurs arguments.",
+            "Le recul disponible sur le produit permet de mieux apprécier son comportement au quotidien. Des utilisations prolongées rapportent notamment une bonne gestion des poils et une faible nécessité d'intervention manuelle."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "8,8"
+        }
+      ],
+      "closing": "C'est un modèle particulièrement intéressant si son prix devient nettement inférieur à celui des nouveaux Saros.",
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros 10"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec station"
+        ],
+        [
+          "Navigation",
+          "LiDAR rétractable"
+        ],
+        [
+          "Atout principal",
+          "Maturité et recul en utilisation quotidienne"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros 10 : le compromis entre haut de gamme et maturité, avec un vrai recul d'usage. Notre avis complet et ses limites en lavage."
+    },
+    {
+      "slug": "roborock-saros-z70",
+      "name": "Roborock Saros Z70",
+      "category": "Robot aspirateur",
+      "date": "9 septembre 2026",
+      "note": "8,6",
+      "role": "Le plus innovant",
+      "lead": "Le modèle le plus spectaculaire de la gamme, avec son bras robotisé capable de déplacer de petits objets. Mais la technologie ne doit pas faire oublier l'essentiel.",
+      "verdict": [
+        "Le Saros Z70 est le modèle le plus spectaculaire de la gamme.",
+        "Sa particularité est évidente : il possède un bras robotisé capable d'identifier et de déplacer certains petits objets présents au sol.",
+        "Mais cette technologie ne doit pas faire oublier l'essentiel : le Z70 reste avant tout un robot aspirateur-laveur."
+      ],
+      "criteria": [
+        {
+          "label": "Aspiration",
+          "score": "8,2",
+          "paragraphs": [
+            "Les performances d'aspiration sont bonnes, mais elles ne sont pas nécessairement les meilleures de la gamme.",
+            "Les essais indépendants montrent notamment de très bonnes performances sur les sols durs, tandis que les tapis et certains débris incrustés peuvent davantage mettre le robot en difficulté."
+          ]
+        },
+        {
+          "label": "Lavage",
+          "score": "9",
+          "paragraphs": [
+            "Le lavage est l'un des points forts du Z70.",
+            "Le robot dispose de deux serpillières rotatives et d'une station capable de les nettoyer automatiquement. Les tests en conditions réelles montrent une bonne efficacité sur les saletés quotidiennes."
+          ]
+        },
+        {
+          "label": "Bras robotisé",
+          "score": "7",
+          "paragraphs": [
+            "C'est évidemment la fonctionnalité qui distingue le Z70.",
+            "Le bras peut déplacer certains petits objets afin de libérer le passage du robot.",
+            "En pratique, cette fonction reste cependant beaucoup moins révolutionnaire que ce que pourrait laisser penser le marketing. La détection et la manipulation d'objets ne sont pas encore suffisamment fiables pour remplacer un rangement manuel.",
+            "Des essais indépendants ont notamment montré que le bras ne fonctionnait pas systématiquement dans toutes les situations."
+          ]
+        },
+        {
+          "label": "Navigation",
+          "score": "9",
+          "paragraphs": [
+            "Le Z70 dispose d'un système de navigation particulièrement avancé.",
+            "Il est capable de cartographier précisément le logement et de gérer efficacement les obstacles."
+          ]
+        },
+        {
+          "label": "Innovation",
+          "score": "10"
+        }
+      ],
+      "audience": {
+        "title": "À qui s'adresse-t-il ?",
+        "paragraphs": [
+          "Le Z70 est surtout destiné aux passionnés de technologie qui veulent le robot le plus innovant possible.",
+          "Pour quelqu'un qui cherche simplement le meilleur rapport efficacité/prix, un Saros 10R ou un Saros 20 peut être plus pertinent."
+        ]
+      },
+      "pros": [
+        "Technologie du bras robotisé unique",
+        "Très bonne navigation",
+        "Excellent lavage",
+        "Station très automatisée",
+        "Très bon nettoyage des sols durs"
+      ],
+      "cons": [
+        "Très cher",
+        "Bras encore imparfait",
+        "Performances d'aspiration pas systématiquement supérieures aux modèles moins chers",
+        "L'innovation ne justifie pas forcément le prix pour tous les utilisateurs"
+      ],
+      "specs": [
+        [
+          "Modèle",
+          "Roborock Saros Z70"
+        ],
+        [
+          "Catégorie",
+          "Robot aspirateur laveur avec bras robotisé"
+        ],
+        [
+          "Particularité",
+          "Bras robotisé capable de déplacer de petits objets"
+        ],
+        [
+          "Lavage",
+          "Deux serpillières rotatives, nettoyées automatiquement en station"
+        ],
+        [
+          "Navigation",
+          "Cartographie précise et gestion avancée des obstacles"
+        ],
+        [
+          "Prix constaté",
+          "À compléter"
+        ]
+      ],
+      "description": "Roborock Saros Z70 : le robot au bras robotisé. Notre avis complet sur ce qu'il fait vraiment, et pourquoi l'innovation ne suffit pas."
+    }
+  ]
+}

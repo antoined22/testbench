@@ -62,6 +62,35 @@ const pages = [
     <div class="foot">Aspiration solide, brosse démêlante excellente — entretien contraignant</div>`) },
 ];
 
+// Une image par test décrit dans content/tests.json.
+const tests = JSON.parse(
+  require('fs').readFileSync(path.join(__dirname, '..', 'content', 'tests.json'), 'utf8')
+).tests;
+
+const ringStops = (note) => {
+  const v = parseFloat(String(note).replace(',', '.')) * 10;
+  return `conic-gradient(from 180deg,#5eead4 0%,#60a5fa ${(v * 0.55).toFixed(1)}%,#a78bfa ${v}%,rgba(255,255,255,.08) ${v}%)`;
+};
+
+for (const t of tests) {
+  pages.push({
+    file: `og-${t.slug}.png`,
+    html: shell(`
+    <div class="brand"><span class="mark">T</span><span>Test<span class="gr">Bench</span></span></div>
+    <div class="row">
+      <div>
+        <span class="tag"><span class="dot"></span> ${t.category}</span>
+        <h1 style="margin-top:26px;font-size:${t.name.length > 22 ? 52 : 62}px">${t.name}</h1>
+        <p class="lead">${t.role || 'Notre avis complet, note par note.'}</p>
+      </div>
+      <div class="score" style="background:${ringStops(t.note)}">
+        <span class="sv">${t.note}<sub>/10</sub></span>
+      </div>
+    </div>
+    <div class="foot">${t.noteProvisoire ? 'Note provisoire — modèle récent, peu de recul' : 'Notre avis détaillé critère par critère'}</div>`),
+  });
+}
+
 (async () => {
   // CHROMIUM_PATH permet de viser un Chromium déjà installé sur la machine.
   const exe = process.env.CHROMIUM_PATH;

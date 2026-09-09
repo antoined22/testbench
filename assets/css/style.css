@@ -389,6 +389,25 @@ section[id] { scroll-margin-top: 24px; }
 }
 .callout p { margin: 0; font-size: .95rem; }
 .callout__label { display: block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; font-weight: 600; }
+.callout--warn { border-left-color: var(--warn); background: rgba(251, 191, 36, .06); }
+.callout--warn .callout__label { color: var(--warn); }
+
+/* Note d'un critère, à côté de son titre de section */
+.crit-score {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-family: var(--font);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--accent);
+  background: rgba(94, 234, 212, .09);
+  border: 1px solid rgba(94, 234, 212, .28);
+  white-space: nowrap;
+}
 
 /* Fiche technique */
 .specs { width: 100%; border-collapse: collapse; font-size: .92rem; margin: 8px 0 24px; }

@@ -9,26 +9,51 @@ Style dark premium tech / glassmorphism. Hébergé sur GitHub Pages.
 
 ```
 index.html                     Accueil : hero, filtres catégories, grille des tests, méthode
+content/tests.json             Source des tests : un objet par produit
+scripts/build-tests.js         Génère tests/<slug>/index.html depuis ce JSON
+scripts/build-sitemap.js       Régénère sitemap.xml
+scripts/og.js                  Génère les images de partage 1200×630
 tests/<slug>/index.html        Une page par produit → URL propre /tests/<slug>/
-_templates/produit.html        Gabarit à copier pour chaque nouveau test (non indexé)
+_templates/produit.html        Gabarit pour une page écrite à la main (non indexé)
 produits/                      Anciennes URLs, redirections seulement
 assets/css/style.css           Toute la mise en forme
 assets/js/nav.js               Lien de navigation actif suivant la section à l'écran
 assets/img/                    Photos produits et images Open Graph (1200×630)
-sitemap.xml                    Liste des URLs pour Google
+sitemap.xml                    Généré — liste des URLs pour Google
 robots.txt                     Indexation ouverte + référence au sitemap
 .github/workflows/pages.yml    Déploiement auto sur push vers main
 ```
 
 ## Ajouter un test produit
 
-1. Copier `_templates/produit.html` vers `tests/marque-modele/index.html`.
-   Le **dossier** fait l'URL : `/tests/marque-modele/`. Ne pas créer de fichier `.html` à plat.
-2. Remplacer les `{{...}}` : titre, chapô, sections, fiche technique, note et sous-notes.
-   Pour l'anneau de note, `--value` vaut la note × 10 (7,4/10 → `--value:74`).
+Deux façons de faire coexistent. **Préférer la voie A**, plus rapide et plus régulière.
+
+### A. Depuis `content/tests.json` (recommandé)
+
+1. Ajouter une entrée dans `content/tests.json` : `slug`, `name`, `note`, `lead`,
+   `description` (150-160 car., pour Google), `verdict`, `criteria`, `pros`, `cons`, `specs`.
+   Champs optionnels : `role`, `audience`, `warning`, `closing`, `noteProvisoire`.
+2. Régénérer :
+
+```bash
+node scripts/build-tests.js     # écrit tests/<slug>/index.html
+node scripts/build-sitemap.js   # met sitemap.xml à jour
+node scripts/og.js              # écrit assets/img/og-<slug>.png
+```
+
 3. Dupliquer le bloc `<!-- ▼ CARTE PRODUIT ▼ -->` dans `index.html` et le remplir.
-4. **Ajouter l'URL dans `sitemap.xml`** et mettre à jour son `<lastmod>`.
-5. Ajouter la photo dans `assets/img/`, remplacer le `<span class="card__placeholder">` par une `<img>`.
+4. Ajouter la photo dans `assets/img/`, remplacer le `<span class="card__placeholder">` par une `<img>`.
+
+Les pages générées sont du HTML statique ordinaire : le site se déploie sans jamais
+lancer ces scripts. Ne pas éditer `tests/<slug>/index.html` à la main pour une page
+générée, la prochaine exécution écraserait la modification.
+
+### B. À la main, depuis le gabarit
+
+Pour une page hors norme. Copier `_templates/produit.html` vers `tests/marque-modele/index.html`
+— le **dossier** fait l'URL — remplacer les `{{...}}`, puis ajouter l'URL à la liste `fixed`
+de `scripts/build-sitemap.js`. Pour l'anneau de note, `--value` vaut la note × 10
+(7,4/10 → `--value:74`). C'est la voie utilisée par la page Dreame Aqua10.
 
 ## SEO
 
@@ -42,7 +67,8 @@ robots.txt                     Indexation ouverte + référence au sitemap
 ### Régénérer les images Open Graph
 
 ```bash
-node scripts/og.js      # écrit assets/img/og-*.png (nécessite playwright)
+npm i playwright && npx playwright install chromium   # une seule fois
+node scripts/og.js                                    # écrit assets/img/og-*.png
 ```
 
 ## Liens d'affiliation
