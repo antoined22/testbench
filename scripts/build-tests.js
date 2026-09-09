@@ -108,13 +108,17 @@ ${para(s.paragraphs)}${sub}${call}`;
     })
     .join('\n');
 
-  /* Rappel vers le bloc marchands, inséré après la première section — et
-     seulement si un lien existe : sinon le bouton ne mènerait nulle part. */
-  const inlineCta = (t.affiliate || []).length
+  /* Rappel marchand en cours d'article. Il pointe directement sur l'offre :
+     un bouton « Voir le prix » qui se contenterait de faire défiler la page
+     vers l'encadré latéral ne tient pas sa promesse. */
+  const firstOffer = (t.affiliate || [])[0];
+  const inlineCta = firstOffer
     ? `
           <div class="glass cta-inline">
             <p><strong>Vous envisagez ce modèle&nbsp;?</strong><br>Son prix bouge souvent, vérifiez l'offre du jour.</p>
-            <a class="btn btn--primary" href="#ou-acheter">Voir le prix</a>
+            <a class="btn btn--primary" href="${firstOffer.url}" rel="sponsored nofollow noopener" target="_blank">
+              Voir le prix sur ${firstOffer.merchant} <span aria-hidden="true">↗</span>
+            </a>
           </div>`
     : '';
 
